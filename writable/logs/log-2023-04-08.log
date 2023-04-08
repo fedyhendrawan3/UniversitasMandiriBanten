@@ -1,0 +1,44 @@
+CRITICAL - 2023-04-08 00:11:50 --> Invalid file: "Dosen.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Dosen.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Dosen', [], true)
+ 3 APPPATH\Controllers\Dosen.php(17): view('Dosen', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dosen->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-08 00:35:59 --> mysqli_sql_exception: Column 'MataKuliahDosen' cannot be null in C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Do...', 0)
+#1 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Do...')
+#2 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Do...')
+#3 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Do...', Array, false)
+#4 C:\xampp\htdocs\UniversitasMandiriBanten\app\Models\ModelDosen.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\UniversitasMandiriBanten\app\Controllers\Dosen.php(70): App\Models\ModelDosen->InsertDosen(Array)
+#6 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(934): App\Controllers\Dosen->Insert()
+#7 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#8 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UniversitasMandiriBanten\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UniversitasMandiriBanten\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-08 00:35:59 --> Column 'MataKuliahDosen' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Dosen` (`NidDosen`, `NamaDosen`, `TglLahirDosen`, `NoTelpDosen`, `EmailDosen`, `AlamatDosen`, `MataKuliahDosen`) VALUES (:NidDosen:, :NamaDosen:, :TglLahirDosen:, :NoTelpDosen:, :EmailDosen:, :AlamatDosen:, :MataKuliahDosen:)', [...], false)
+ 2 APPPATH\Models\ModelDosen.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Dosen.php(70): App\Models\ModelDosen->InsertDosen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dosen->Insert()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-08 02:03:05 --> Invalid file: "PetugasInput.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('PetugasInput.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('PetugasInput', [], true)
+ 3 APPPATH\Controllers\Petugas.php(54): view('PetugasInput')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Petugas->Input()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Petugas))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

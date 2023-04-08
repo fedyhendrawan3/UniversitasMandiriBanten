@@ -1,0 +1,119 @@
+CRITICAL - 2023-04-07 01:44:34 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Mahasiswa.php on line 41.
+ 1 APPPATH\Views\Mahasiswa.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Mahasiswa.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Mahasiswa', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(17): view('Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-07 01:46:08 --> Invalid file: "BeritaInput.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('BeritaInput.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('BeritaInput', [], true)
+ 3 APPPATH\Controllers\Mahasiswa.php(50): view('BeritaInput')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->input()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-07 01:53:15 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Mahasiswa.php on line 41.
+ 1 APPPATH\Views\Mahasiswa.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\Mahasiswa.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Mahasiswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Mahasiswa', [], true)
+ 5 APPPATH\Controllers\Mahasiswa.php(17): view('Mahasiswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-07 01:57:06 --> Call to undefined method App\Models\ModelMahasiswa::InsertMahasiwa
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Mahasiswa.php(70): CodeIgniter\Model->__call('InsertMahasiwa', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->Insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-07 02:01:45 --> Call to undefined method App\Models\ModelMahasiswa::InsertMahasiwa
+in SYSTEMPATH\Model.php on line 841.
+ 1 APPPATH\Controllers\Mahasiswa.php(70): CodeIgniter\Model->__call('InsertMahasiwa', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->Insert()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-07 02:54:51 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseBuilder.php(2777): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\xampp\htdocs\UniversitasMandiriBanten\app\Models\ModelMahasiswa.php(48): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\UniversitasMandiriBanten\app\Controllers\Mahasiswa.php(48): App\Models\ModelMahasiswa->DeleteMahasiswa('1')
+#6 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->Delete('1')
+#7 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#8 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UniversitasMandiriBanten\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UniversitasMandiriBanten\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-07 02:54:51 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2777): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mahasiswa`
+WHERE `id` = :id:', [...], false)
+ 2 APPPATH\Models\ModelMahasiswa.php(48): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Mahasiswa.php(48): App\Models\ModelMahasiswa->DeleteMahasiswa('1')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->Delete('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-04-07 03:04:42 --> mysqli_sql_exception: Column 'NidDosen' cannot be null in C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `Do...', 0)
+#1 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Do...')
+#2 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Do...')
+#3 C:\xampp\htdocs\UniversitasMandiriBanten\system\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Do...', Array, false)
+#4 C:\xampp\htdocs\UniversitasMandiriBanten\app\Models\ModelDosen.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\UniversitasMandiriBanten\app\Controllers\Dosen.php(70): App\Models\ModelDosen->InsertDosen(Array)
+#6 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(934): App\Controllers\Dosen->Insert()
+#7 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#8 C:\xampp\htdocs\UniversitasMandiriBanten\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\UniversitasMandiriBanten\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\UniversitasMandiriBanten\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-04-07 03:04:42 --> Column 'NidDosen' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2295): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Dosen` (`NidDosen`, `NamaDosen`, `TglLahirDosen`, `NoTelpDosen`, `EmailDosen`, `AlamatDosen`, `MataKuliahDosen`) VALUES (:NidDosen:, :NamaDosen:, :TglLahirDosen:, :NoTelpDosen:, :EmailDosen:, :AlamatDosen:, :MataKuliahDosen:)', [...], false)
+ 2 APPPATH\Models\ModelDosen.php(54): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Dosen.php(70): App\Models\ModelDosen->InsertDosen([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dosen->Insert()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-07 23:38:51 --> Invalid file: "Template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Template', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('Template')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-07 23:39:04 --> Invalid file: "Template/.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Template/.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('Template/', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('Template/')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
